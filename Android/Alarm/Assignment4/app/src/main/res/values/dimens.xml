@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tbheight">50dp</dimen>
+    <dimen name="itemheight">100dp</dimen>
+    <dimen name="plus">20dp</dimen>
+    <dimen name="margins">16dp</dimen>
+    <dimen name="tbfont">16sp</dimen>
+    <dimen name="itemfont">32sp</dimen>
+    <dimen name="w">1dp</dimen>
+    <dimen name="r">15dp</dimen>
+</resources>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Alarm</string>
+    <string name="color">switch to </string>
+    <string name="light">light</string>
+    <string name="dark">dark</string>
+    <string name="test">String for layouts</string>
+    <string name="y">YES</string>
+    <string name="n">NO</string>
+    <string name="question">Are you sure you want to delete item?</string>
+    <string name="forlight">Switch to light </string>
+    <string name="fordark">Switch to dark </string>
+</resources>

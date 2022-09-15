@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Notes</string>
+    <string name="noteTitle">Type name here</string>
+    <string name="li">List item</string>
+    <string name="hint">Enter new item</string>
+    <string name="empty">Note</string>
+    <string name="dots">...</string>
+    <string name="search">Search your notes</string>
+    <string name="pin">PINNED</string>
+    <string name="other">OTHER</string>
+</resources>

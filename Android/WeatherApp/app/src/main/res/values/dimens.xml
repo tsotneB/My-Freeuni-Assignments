@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="flagDimension">50dp</dimen>
+    <dimen name="bardimension">50dp</dimen>
+    <dimen name="smallSeparation">16dp</dimen>
+    <dimen name="bigSeparation">32dp</dimen>
+    <dimen name="weatherIconDimens">100dp</dimen>
+    <dimen name="smallTextSize">16sp</dimen>
+    <dimen name="middleTextSize">24sp</dimen>
+    <dimen name="bigTextSize">48sp</dimen>
+    <dimen name="itemHeight">70dp</dimen>
+    <dimen name="z">0dp</dimen>
+</resources>

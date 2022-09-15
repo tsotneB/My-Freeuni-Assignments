@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    tools:background="@color/black"
+    android:layout_height="match_parent"
+    tools:context=".WeatherToday">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/georgianFlag"
+                    android:layout_width="@dimen/flagDimension"
+                    android:layout_height="@dimen/flagDimension"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/ukFlag"
+                    android:layout_marginTop="@dimen/smallSeparation"
+                    android:src="@drawable/georgia"/>
+
+                <ImageView
+                    android:id="@+id/ukFlag"
+                    android:layout_width="@dimen/flagDimension"
+                    android:layout_height="@dimen/flagDimension"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="@dimen/smallSeparation"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:src="@drawable/uk"/>
+                <ImageView
+                    android:id="@+id/jamaicanFlag"
+                    android:layout_width="@dimen/flagDimension"
+                    android:layout_height="@dimen/flagDimension"
+                    android:layout_marginTop="@dimen/smallSeparation"
+                    android:src="@drawable/jamaica"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/ukFlag"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/capitalLabel"
+                    android:text="@string/t"
+                    app:layout_constraintTop_toBottomOf="@+id/ukFlag"
+                    android:layout_marginTop="@dimen/bigSeparation"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:theme="@style/small_ordinary"/>
+
+                <ImageView
+                    android:id="@+id/weatherIcon"
+                    android:layout_width="@dimen/weatherIconDimens"
+                    android:layout_height="@dimen/weatherIconDimens"
+                    app:layout_constraintTop_toBottomOf="@+id/capitalLabel"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="@dimen/smallSeparation"
+                    />
+
+                <TextView
+                    android:id="@+id/tempLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/start"
+                    android:theme="@style/big_bold"
+                    app:layout_constraintTop_toBottomOf="@+id/weatherIcon"
+                    android:layout_marginTop="@dimen/smallSeparation"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    />
+
+                <TextView
+                    android:id="@+id/weatherDescriptionLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/start"
+                    android:theme="@style/small_ordinary"
+                    android:layout_gravity="center_horizontal"
+                    app:layout_constraintTop_toBottomOf="@+id/tempLabel"
+                    android:layout_marginTop="@dimen/smallSeparation"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    />
+
+                <TextView
+                    android:id="@+id/detailsLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/det"
+                    android:textSize="@dimen/smallTextSize"
+                    app:layout_constraintTop_toBottomOf="@+id/weatherDescriptionLabel"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginTop="@dimen/bigSeparation"
+                    android:layout_marginStart="@dimen/smallSeparation"
+                    android:theme="@style/small_ordinary"
+                    />
+
+                <TextView
+                    android:id="@+id/temperatureLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/temp"
+                    android:theme="@style/small_ordinary"
+                    app:layout_constraintTop_toBottomOf="@+id/detailsLabel"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginTop="@dimen/smallSeparation"
+                    android:layout_marginStart="@dimen/smallSeparation"/>
+
+                <TextView
+                    android:id="@+id/feelLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/feeling"
+                    android:theme="@style/small_ordinary"
+                    app:layout_constraintTop_toBottomOf="@+id/temperatureLabel"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginTop="@dimen/smallSeparation"
+                    android:layout_marginStart="@dimen/smallSeparation"/>
+
+                <TextView
+                    android:id="@+id/humidityLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hum"
+                    android:theme="@style/small_ordinary"
+                    app:layout_constraintTop_toBottomOf="@+id/feelLabel"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginTop="@dimen/smallSeparation"
+                    android:layout_marginStart="@dimen/smallSeparation"/>
+
+                <TextView
+                    android:id="@+id/pressureLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pres"
+                    android:theme="@style/small_ordinary"
+                    app:layout_constraintTop_toBottomOf="@+id/humidityLabel"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginTop="@dimen/smallSeparation"
+                    android:layout_marginStart="@dimen/smallSeparation"/>
+
+                <TextView
+                    android:id="@+id/tempDataLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/start"
+                    android:theme="@style/small_bold"
+                    app:layout_constraintTop_toBottomOf="@+id/detailsLabel"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="@dimen/smallSeparation"
+                    android:layout_marginEnd="@dimen/smallSeparation"
+                    />
+
+                <TextView
+                    android:id="@+id/feelDataLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/start"
+                    android:theme="@style/small_bold"
+                    app:layout_constraintTop_toBottomOf="@+id/tempDataLabel"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="@dimen/smallSeparation"
+                    android:layout_marginEnd="@dimen/smallSeparation"
+                    />
+
+                <TextView
+                    android:id="@+id/humDataLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/start"
+                    android:theme="@style/small_bold"
+                    app:layout_constraintTop_toBottomOf="@+id/feelDataLabel"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="@dimen/smallSeparation"
+                    android:layout_marginEnd="@dimen/smallSeparation"
+                    />
+
+                <TextView
+                    android:id="@+id/presDataLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/start"
+                    android:theme="@style/small_bold"
+                    app:layout_constraintTop_toBottomOf="@+id/humDataLabel"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="@dimen/smallSeparation"
+                    android:layout_marginEnd="@dimen/smallSeparation"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

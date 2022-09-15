@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="separate">16dp</dimen>
+    <dimen name="sephalf">8dp</dimen>
+    <dimen name="fontsize">16dp</dimen>
+    <dimen name="z">0dp</dimen>
+</resources>

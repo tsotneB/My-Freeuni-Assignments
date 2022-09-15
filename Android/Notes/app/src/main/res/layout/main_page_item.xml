@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/border"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/parentNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/separation"
+        android:layout_marginTop="@dimen/smallsep"
+        android:layout_marginBottom="@dimen/smallsep"
+        android:textSize="@dimen/title"
+        android:maxLines="2"
+        tools:text="@string/empty"
+        app:layout_constraintBottom_toTopOf="@+id/fitem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/fitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/smallsep"
+        android:buttonTint="@color/grey"
+        android:maxLines="1"
+        android:enabled="false"
+        android:textSize="@dimen/txt"
+        tools:text="@string/empty"
+        app:layout_constraintStart_toStartOf="@+id/parentNote"
+        app:layout_constraintTop_toBottomOf="@+id/parentNote" />
+
+    <CheckBox
+        android:id="@+id/sitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/smallsep"
+        android:buttonTint="@color/grey"
+        android:maxLines="1"
+        android:enabled="false"
+        android:textSize="@dimen/txt"
+        tools:text="@string/empty"
+        app:layout_constraintStart_toStartOf="@+id/fitem"
+        app:layout_constraintTop_toBottomOf="@+id/fitem" />
+
+    <CheckBox
+        android:id="@+id/titem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/smallsep"
+        android:buttonTint="@color/grey"
+        android:enabled="false"
+        android:maxLines="1"
+        android:textSize="@dimen/txt"
+        tools:text="@string/empty"
+        app:layout_constraintStart_toStartOf="@+id/sitem"
+        app:layout_constraintTop_toBottomOf="@+id/sitem" />
+
+
+    <TextView
+        android:id="@+id/dots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/separation"
+        android:layout_marginTop="@dimen/smallsep"
+        android:textSize="@dimen/txt"
+        android:text="@string/dots"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titem" />
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/separation"
+        android:layout_marginTop="@dimen/smallsep"
+        android:layout_marginBottom="@dimen/smallsep"
+        android:textSize="@dimen/txt"
+        tools:text="@string/empty"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dots" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

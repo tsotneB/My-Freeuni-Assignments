@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="det">DETAILS</string>
+    <string name="temp">Temperature</string>
+    <string name="feeling">Feels Like</string>
+    <string name="hum">Humidity</string>
+    <string name="pres">Pressure</string>
+    <string name="start">No Data</string>
+    <string name="api">6a03a52969e6134ed33eccf7d2bffac8</string>
+    <string name="unit">metric</string>
+    <string name="baseurl">https://api.openweathermap.org/</string>
+    <string name="t">Tbilisi</string>
+    <string name="l">London</string>
+    <string name="k">Kingston</string>
+    <string name="rqc"></string>
+    <string name="c"></string>
+    <string name="rqc1"></string>
+    <string name="c1"></string>
+    <string name="rqb">requestbackground</string>
+    <string name="b">background</string>
+    <string name="deg">°</string>
+    <string name="per">%</string>
+    <string name="baseimg">https://openweathermap.org/img/wn/</string>
+    <string name="endimg">\@2x.png</string>
+</resources>
