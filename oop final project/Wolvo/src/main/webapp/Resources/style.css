@@ -1,0 +1,906 @@
+body {
+    background-image: url("back.jfif");
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+
+h1 {
+    font-size: 50px;
+    color: goldenrod;
+    font-family: "Informal Roman", cursive;
+}
+
+a {
+   color: Red;
+   font-family: OCR A Std, monospace;
+}
+
+errh {
+    font-size: 150px;
+    color: goldenrod;
+    text-align: center;
+}
+
+penh {
+    font-size: 75px;
+    color: goldenrod;
+    text-align: center;
+}
+
+regf {
+    font-size: 75px;
+    color: goldenrod;
+    font-family: "Informal Roman", cursive;
+    text-align: center;
+}
+
+regs {
+    font-size: 50px;
+    color: goldenrod;
+    color: brown;
+    text-align: center;
+}
+
+.div {
+    position: absolute;
+    top: 50%;
+}
+
+errp {
+    font-size: 350px;
+    font-family: "Informal Roman", cursive;
+    text-align: center;
+    color: brown;
+}
+
+penp {
+    font-size: 125px;
+    font-family: "Informal Roman", cursive;
+    text-align: center;
+    color: brown;
+}
+
+p {
+    text-align: center;
+    font-weight: bold;
+    color: goldenrod;
+    font-size: 30px;
+}
+
+p1 {
+    text-align: center;
+    font-weight: bold;
+    color: brown;
+    font-size: 30px;
+}
+
+label {
+    font-weight: bold;
+}
+
+#loginBut {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    padding: 4px 30px;
+    transform: translate(-50%, -50%);
+    background-color: goldenrod;
+    border: 1px solid #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+}
+
+#signUpCust {
+    padding: 4px 25px;
+    background-color: goldenrod;
+    border: 1px solid #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+}
+
+#signUpMan {
+    padding: 4px 28px;
+    background-color: goldenrod;
+    border: 1px solid #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+}
+
+#signUpCour {
+    padding: 4px 32px;
+    background-color: goldenrod;
+    border: 1px solid #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+}
+
+#orderBut {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 5px 50px;
+    background-color: goldenrod;
+    border: 1px solid #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+}
+
+.buttonHolder {
+    text-align: center;
+    position: relative;
+}
+
+.introduction {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+
+#signUpCustBut {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 5px 50px;
+    background-color: goldenrod;
+    border: 1px solid #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+}
+
+#signUpCourBut {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 5px 50px;
+    background-color: goldenrod;
+    border: 1px solid #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+}
+
+#signUpManBut {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 5px 50px;
+    background-color: goldenrod;
+    border: 1px solid #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+}
+
+.custSignUp {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify-all;
+    color: white;
+}
+
+.courSignUp {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify-all;
+    color: white;
+}
+
+.manSignUp {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify-all;
+    color: white;
+}
+
+.courierInfo {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    text-align: justify-all;
+    font-size: 25px;
+    color: brown;
+    border: 1px dashed #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+    background-color: darkgoldenrod;
+}
+
+.courierReviews {
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    transform: translate(-47%, -27%);
+    max-width: 300px;
+    max-height: 600px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: justify-all;
+    font-size: 25px;
+    color: brown;
+    border: 1px dashed #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+    background-color: darkgoldenrod;
+}
+
+.currentOrder {
+    position: absolute;
+    top: 30%;
+    left: 52%;
+    transform: translate(-52%, -27%);
+    max-width: 400px;
+    max-height: 600px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: justify-all;
+    font-size: 25px;
+    color: brown;
+    border: 1px dashed #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+    background-color: darkgoldenrod;
+}
+
+.orderconf {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify-all;
+    font-size: 30px;
+    color: brown;
+    border: 1px dashed #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+    background-color: darkgoldenrod;
+}
+
+.adminInfo {
+    position: absolute;
+    top: 20%;
+    left: 18%;
+    transform: translate(-50%, -30%);
+    text-align: justify-all;
+    font-size: 25px;
+    color: brown;
+    border: 1px dashed #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+    background-color: darkgoldenrod;
+}
+
+.pendingCouriers {
+    position: absolute;
+    top: 60%;
+    left: 18%;
+    transform: translate(-50%, -30%);
+    max-width: 450px;
+    max-height: 350px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: justify-all;
+    font-size: 25px;
+    color: brown;
+    border: 1px dashed #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+    background-color: darkgoldenrod;
+}
+
+.pendingManagers {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-40%, -30%);
+    max-width: 450px;
+    max-height: 600px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: justify-all;
+    font-size: 25px;
+    color: brown;
+    border: 1px dashed #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+    background-color: darkgoldenrod;
+}
+
+.pendingDishes {
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    transform: translate(-37%, -25%);
+    max-width: 400px;
+    max-height: 550px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: justify-all;
+    font-size: 25px;
+    color: brown;
+    border: 1px dashed #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+    background-color: darkgoldenrod;
+}
+
+.divCourierApprove {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify-all;
+    font-size: 25px;
+    color: brown;
+    border: 1px dashed #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+    background-color: darkgoldenrod;
+}
+
+.courregapproved {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify-all;
+    font-size: 25px;
+    color: brown;
+    border: 1px dashed #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+    background-color: darkgoldenrod;
+}
+
+.divManagerApprove {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify-all;
+    font-size: 25px;
+    color: brown;
+    border: 1px dashed #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+    background-color: darkgoldenrod;
+}
+
+.manregapproved {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify-all;
+    font-size: 25px;
+    color: brown;
+    border: 1px dashed #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+    background-color: darkgoldenrod;
+}
+
+.divDishApprove {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify-all;
+    font-size: 25px;
+    color: brown;
+    border: 1px dashed #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+    background-color: darkgoldenrod;
+}
+
+.dishregapproved {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify-all;
+    font-size: 25px;
+    color: brown;
+    border: 1px dashed #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+    background-color: darkgoldenrod;
+}
+
+.courregrejected {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify-all;
+    font-size: 25px;
+    color: brown;
+    border: 1px dashed #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+    background-color: darkgoldenrod;
+}
+
+.dishregrejected{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify-all;
+    font-size: 25px;
+    color: brown;
+    border: 1px dashed #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+    background-color: darkgoldenrod;
+}
+
+.manregrejected{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify-all;
+    font-size: 25px;
+    color: brown;
+    border: 1px dashed #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+    background-color: darkgoldenrod;
+}
+
+.searchUsers{
+    position: absolute;
+    top: 7%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+}
+
+.usersFound {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify-all;
+    font-size: 25px;
+    color: brown;
+    border: 1px dashed #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+    background-color: darkgoldenrod;
+}
+
+.userFF{
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    transform: translate(-30%, -30%);
+    text-align: justify-all;
+    font-size: 25px;
+    color: brown;
+    border: 1px dashed #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+    background-color: darkgoldenrod;
+}
+
+.userFOrders{
+    position: absolute;
+    top: 25%;
+    left: 60%;
+    transform: translate(-50%, -20%);
+    max-width: 500px;
+    max-height: 750px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: justify-all;
+    font-size: 25px;
+    color: brown;
+    border: 1px dashed #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+    background-color: darkgoldenrod;
+}
+
+.madeadm{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify-all;
+    font-size: 25px;
+    color: brown;
+    border: 1px dashed #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+    background-color: darkgoldenrod;
+}
+
+.customerInfo {
+    position: absolute;
+    top: 23%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    text-align: justify-all;
+    font-size: 23px;
+    color: brown;
+    border: 1px dashed #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+    background-color: darkgoldenrod;
+}
+
+.customerFriends{
+    position: absolute;
+    top: 55%;
+    left: 10%;
+    transform: translate(-50%, -20%);
+    max-width: 250px;
+    max-height: 400px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: justify-all;
+    font-size: 23px;
+    color: brown;
+    border: 1px dashed #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+    background-color: darkgoldenrod;
+}
+
+.customerFriendRequests{
+    position: absolute;
+    top: 55%;
+    left: 29%;
+    transform: translate(-50%, -20%);
+    max-width: 250px;
+    max-height: 400px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: justify-all;
+    font-size: 23px;
+    color: brown;
+    border: 1px dashed #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+    background-color: darkgoldenrod;
+}
+
+.OrderHistory{
+    position: absolute;
+    top: 40%;
+    left: 85%;
+    max-width: 375px;
+    max-height: 600px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: justify-all;
+    font-size: 20px;
+    color: brown;
+    border: 1px dashed #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+    transform: translate(-50%, -35%);
+    background-color: darkgoldenrod;
+}
+
+.newOrder {
+    position: absolute;
+    top: 30%;
+    left: 54.25%;
+    transform: translate(-50%, -30%);
+    max-width: 400px;
+    max-height: 600px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: justify-all;
+    font-size: 23px;
+    color: brown;
+    border: 1px dashed #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+    background-color: darkgoldenrod;
+}
+
+.userSearchBar {
+    position: absolute;
+    top: 7%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+}
+
+.restaurantDishes {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -15%);
+    max-width: 500px;
+    max-height: 800px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: justify-all;
+    font-size: 25px;
+    color: brown;
+    border: 1px dashed #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+    background-color: darkgoldenrod;
+}
+
+.orderContainer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify-all;
+    font-size: 25px;
+    color: brown;
+    border: 1px dashed #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+    background-color: darkgoldenrod;
+}
+
+.noCouriers {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify-all;
+    font-size: 25px;
+    color: brown;
+    border: 1px dashed #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+    background-color: darkgoldenrod;
+}
+
+.doneReview {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify-all;
+    font-size: 25px;
+    color: brown;
+    border: 1px dashed #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+    background-color: darkgoldenrod;
+}
+
+.reqsent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify-all;
+    font-size: 25px;
+    color: brown;
+    border: 1px dashed #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+    background-color: darkgoldenrod;
+}
+
+.reviewCont{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify-all;
+    font-size: 25px;
+    color: brown;
+    border: 1px dashed #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+    background-color: darkgoldenrod;
+}
+
+#reviewBut {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 5px 50px;
+    background-color: goldenrod;
+    border: 1px solid #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+}
+
+.reqApp {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify-all;
+    font-size: 25px;
+    color: brown;
+    border: 1px dashed #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+    background-color: darkgoldenrod;
+}
+
+.reqRej {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify-all;
+    font-size: 25px;
+    color: brown;
+    border: 1px dashed #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+    background-color: darkgoldenrod;
+}
+
+.managerInfo{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    text-align: justify-all;
+    font-size: 25px;
+    color: brown;
+    border: 1px dashed #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+    background-color: darkgoldenrod;
+}
+
+.managerRests{
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    transform: translate(-45%, -27%);
+    max-width: 400px;
+    max-height: 600px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: justify-all;
+    font-size: 25px;
+    color: brown;
+    border: 1px dashed #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+    background-color: darkgoldenrod;
+}
+
+.managerRestDishes{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -27%);
+    max-width: 400px;
+    max-height: 600px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: justify-all;
+    font-size: 25px;
+    color: brown;
+    border: 1px dashed #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+    background-color: darkgoldenrod;
+}
+
+.dishRemoved{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify-all;
+    font-size: 30px;
+    color: brown;
+    border: 1px dashed #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+    background-color: darkgoldenrod;
+}
+
+.addNewDish {
+    text-align: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: white;
+    top: 75%;
+    left: 20%;
+    border: 1px dashed #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+    background-color: darkgoldenrod;
+}
+
+#dishSubmit {
+    padding: 4px 25px;
+    background-color: goldenrod;
+    border: 1px solid #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.dishAddition{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify-all;
+    font-size: 30px;
+    color: brown;
+    border: 1px dashed #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+    background-color: darkgoldenrod;
+}
+
+.Error {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Pending {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.reg {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logout {
+    position: absolute;
+    top: 6%;
+    right: 90%;
+}
+
+.logoutR {
+    position: absolute;
+    top: 6%;
+    left: 95%;
+}
+
+#SignOut {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    padding: 4px 30px;
+    transform: translate(-90%, -50%);
+    background-color: goldenrod;
+    border: 1px solid #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+}
