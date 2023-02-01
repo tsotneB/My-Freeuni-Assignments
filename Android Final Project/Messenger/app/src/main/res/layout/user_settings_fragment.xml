@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/settingspage"
+    tools:context=".user.SettingsFragment">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+    </ProgressBar>
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/pfp"
+        android:layout_width="@dimen/avatar_dimen"
+        android:layout_height="@dimen/avatar_dimen"
+        android:src="@drawable/avatar_image_placeholder"
+        app:civ_border_color="@color/application_blue"
+        app:civ_border_width="@dimen/z"
+        app:civ_shadow="true"
+        android:onClick="uploadImage"
+        app:civ_shadow_radius="@dimen/shad_rad"
+        app:civ_shadow_color="@color/application_blue_variant"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.14"/>
+
+    <EditText
+        android:id="@+id/nm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_text_height"
+        android:layout_marginHorizontal="@dimen/bb_rad"
+        android:layout_marginTop="@dimen/bb_rad"
+        android:background="@drawable/edittext_border"
+        android:backgroundTint="@color/light"
+        android:hint="@string/name"
+        android:paddingHorizontal="@dimen/img_marg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pfp"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/pos"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_text_height"
+        android:layout_marginHorizontal="@dimen/bb_rad"
+        android:layout_marginTop="@dimen/sign_in_margin"
+        android:background="@drawable/edittext_border"
+        android:backgroundTint="@color/light"
+        android:hint="@string/position"
+        android:paddingHorizontal="@dimen/img_marg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nm"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/update_button"
+        android:layout_width="@dimen/so_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/upd_but_marg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pos"
+        android:text="@string/update"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/logout_button"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="@dimen/so_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/so_marg"
+        android:backgroundTint="@color/white"
+        android:text="@string/sign_out"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/update_button"
+        app:strokeColor="@color/black" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
